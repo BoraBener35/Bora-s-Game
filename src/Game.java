@@ -146,8 +146,25 @@ public class Game {
         return true; // signal that we want to quit
     } else if (commandWord.equals("eat")) {
       System.out.println("Do you really think you should be eating at a time like this?");
+    } else if (commandWord.equals("Take")){
+      if (command.hasSecondWord())
+        System.out.println("Take what?");
+      else
+        takeItem(command.getSecondWord());
     }
     return false;
+  }
+
+  private void takeItem(String secondWord){
+    Inventory temp = currentRoom.getInventory();
+
+    Item item = temp.removeItem(item);
+    if (item != null){
+      if (inventory.addItem(item)){
+        System.out.println("You taken the attribute")
+      }else
+      System.out.println("You were unable to take the attributes")
+    }
   }
 
   // implementations of user commands:

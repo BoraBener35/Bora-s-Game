@@ -10,7 +10,7 @@ public class Inventory {
    public boolean addItem(Item item){
         return items.add(item);
    }
-
+   
    public Item removeItem(String name){
        for (int i = 0; i<items.size(); i++){
            if (name.equals(items.get(i).getName())){
