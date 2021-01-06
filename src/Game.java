@@ -22,6 +22,7 @@ import java.util.Scanner;
 public class Game {
   private Parser parser;
   private Room currentRoom;
+  private Inventory inventory;
   // This is a MASTER object that contains all of the rooms and is easily
   // accessible.
   // The key will be the name of the room -> no spaces (Use all caps and
@@ -88,6 +89,7 @@ public class Game {
     try {
       initRooms("data/rooms.dat");
       currentRoom = masterRoomMap.get("ROOM_1");
+      inventory = new Inventory();
     } catch (Exception e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
