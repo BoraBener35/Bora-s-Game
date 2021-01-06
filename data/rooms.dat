@@ -3,10 +3,10 @@ Room Description:  This is Court<br>
 Exit Rooms: E-Home, u-Agency
 Room Name: Home
 Room Description:  This is Home
-Exit Rooms: W-Court, U-Agency
+Exit Rooms: W-Court, N-Agency
 Room Name: Agency
 Room Description:  This is Agency
-Exit Rooms: W-Court, E-Home, D-NBA
+Exit Rooms: W-Court, E-Home, S-NBA
 Room Name: NBA
 Room Description: This is the NBA Draft
 Exit Rooms: E-Home
