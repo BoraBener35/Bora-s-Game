@@ -40,6 +40,10 @@ public class Room {
     inventory = new Inventory();
   }
 
+  public Inventory getInventory(){
+    return inventory;
+  }
+
   public void setExit(char direction, Room r) throws Exception {
     String dir = "";
     switch (direction) {
