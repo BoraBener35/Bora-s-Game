@@ -1,12 +1,58 @@
-Room Name: The Court
-Room Description:  This is Court<br>
-Exit Rooms: E-Home, u-Agency
+Room Name: Court
+Room Description:  This is the court that you can practice in and earn atributes for shooting, playmaking/dribling, dunking/finishing, and defending<br>
+Exit Rooms: E-Home, N-Agency, S-HallOFFameSpeech
 Room Name: Home
-Room Description:  This is Home
-Exit Rooms: W-Court, N-Agency
+Room Description:  This is your Home where you can get physical atributes like more stamina, and strength from muscle recovery. You will have to return home after every training/game to earn atributes/money
+Exit Rooms: W-Court, N-Gym
 Room Name: Agency
-Room Description:  This is the Agency
+Room Description:  This is the Agency where you can ask for a trade to another team and you can work out contracts
 Exit Rooms: W-Court, E-Home, S-NBA
-Room Name: NBA
-Room Description: This is the NBA Draft
-Exit Rooms: E-Home
+Room Name: Gym
+Room Description: This is the gym where you can build muscles, improve speed, and vertical. 
+Exit Rooms: E-Home, W-Court, D-NBAHomeCourt, S-Gatorade Facility
+Room Name: NBAHomeCourt
+Room Description: This is your home court where you will have games 
+Exit Rooms: E-Home, W-Court, N-Agency
+Room Name: CourtLockerRoom
+Room Description: This is where you can leave your money although you can't leave without it
+Exit Rooms: D-Court
+Room Name: GymLockerRoom
+Room Description:This is where you can leave your things and also you can find extra money or attributes sometimes
+Exit Rooms: D-Gym
+Room Name: HomeKitchen
+Room Description: This is where you can find food to improve certian attributes
+Exit Rooms: D-Home
+Room Name: HomeBedroom
+Room Description: This is where you can enter your bed and sleep, you must sleep after every workout/game
+Exit Rooms: U-Home, D-Bed
+Room Name: Bed 
+Room Description: This for sleeping. You have entered your bed.
+Exit Rooms: U-HomeBedroom
+Room Name: Gatorade
+Room Description: This is the Gatorade Facility. Congradulations if all of the workouts at the gatorade facility are done then you win the game
+Exit Rooms: N-Home, W-Agency, S-Court, D-GatoradeWorkout1
+Room Name: GatoradeWorkout1
+Room Description: This is the first workout. You are now done the first workout
+Exit Rooms: D-GatoradeWorkout2
+Room Name: GatoradeWorkout2
+Room Description: Congradulations for completing the second workout
+Exit Rooms: U-GatoradeWorkout3
+Room Name: GatoradeWorkout3
+Room Description: Congradualtions you are done the third workout
+Exit Rooms: D-GatoradeWorkout4
+Room Name: GatoradeWorkout4
+Room Description: Congradualtions you are done the fourth workout
+Exit Rooms: D-GatoradeWorkout5
+Room Name:GatoradeWorkout5
+Room Description:You are done the fifth workout
+Exit Rooms: D-GatoradeWorkout6
+Room Name: GatoradeWorkout6
+Room Description: You have completed the Workouts. Now you must go to where the game started. 
+Exit Rooms: U-Gatorade
+Room Name: HallOFFameSpeech
+Room Description: You are now done giving your speech
+Exit Rooms: U-HallOFFame
+Room Description: You are now in the Hall Of Fame. You have completed your NBA career
+Exit Rooms:D-HallOFFameSpeech
+
+
