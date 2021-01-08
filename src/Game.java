@@ -158,12 +158,12 @@ public class Game {
   private void takeItem(String secondWord){
     Inventory temp = currentRoom.getInventory();
 
-    Item item = temp.removeItem(item);
+    Item item = temp.removeItem(secondWord);
     if (item != null){
       if (inventory.addItem(item)){
-        System.out.println("You taken the attribute")
+        System.out.println("You taken the attribute");
       }else
-      System.out.println("You were unable to take the attributes")
+      System.out.println("You were unable to take the attributes");
     }
   }
 
