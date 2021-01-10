@@ -151,8 +151,16 @@ public class Game {
         System.out.println("Take what?");
       else
         takeItem(command.getSecondWord());
-    }
-    return false;
+    }else if (commandWord.equals("Drop")){
+      if (command.hasSecondWord())
+        System.out.println("Drop what?");
+      else
+        dropItem(command.getSecondWord());
+    }else if (commandWord.equals("i"));
+    System.out.println("You are carrying the following:" + inventory);
+    
+        return false;
+
   }
 
   private void takeItem(String secondWord){
@@ -176,7 +184,7 @@ public class Game {
         System.out.println("You have taken the attribute/accolade");
       }else
       System.out.println("You were unable to take the attributes/accolade");
-  }
+    }
 
   // implementations of user commands:
   /**
