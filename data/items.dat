@@ -1,0 +1,16 @@
+Item Name: MVP Trophy
+Item Description: A trophy that adds to accolades
+Openable: false
+Room: Agency
+Item Name: Championship Ring
+Item Description: A Ring that adds to accolades
+Openable: false
+Room: NBAHomeCourt
+Item Name: ShootingBoosts
+Item Description: These help you get your shot level up 
+Openable: false
+Room: Court
+Item Name: Stamina bar
+Item Description: This gives you more stamina
+Openable: false
+Room: Home

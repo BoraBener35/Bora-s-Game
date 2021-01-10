@@ -118,8 +118,8 @@ public class Game {
    */
   private void printWelcome() {
     System.out.println();
-    System.out.println("Welcome to Zork!");
-    System.out.println("Zork is a new, incredibly boring adventure game.");
+    System.out.println("Welcome to the NBA!");
+    System.out.println("This is a NBA hall of fame simulation. It's really bad though.");
     System.out.println("Type 'help' if you need help.");
     System.out.println();
     System.out.println(currentRoom.longDescription());
@@ -144,8 +144,8 @@ public class Game {
         System.out.println("Quit what?");
       else
         return true; // signal that we want to quit
-    } else if (commandWord.equals("eat")) {
-      System.out.println("Do you really think you should be eating at a time like this?");
+    } else if (commandWord.equals("trian")) {
+      System.out.println("Do you really think you should be training at a time like this?");
     } else if (commandWord.equals("Take")){
       if (command.hasSecondWord())
         System.out.println("Take what?");
@@ -161,9 +161,9 @@ public class Game {
     Item item = temp.removeItem(secondWord);
     if (item != null){
       if (inventory.addItem(item)){
-        System.out.println("You taken the attribute");
+        System.out.println("You have taken the attribute/accolade");
       }else
-      System.out.println("You were unable to take the attributes");
+      System.out.println("You were unable to take the attributes/accolade");
     }
   }
 
@@ -173,10 +173,10 @@ public class Game {
    * and a list of the command words.
    */
   private void printHelp() {
-    System.out.println("You are lost. You are alone. You wander");
-    System.out.println("around at Monash Uni, Peninsula Campus.");
+    System.out.println("You are in the NBA");
+    System.out.println("What you will need is attributes and accolades");
     System.out.println();
-    System.out.println("Your command words are:");
+    System.out.println("Your command words are: Take, Quit, U, D, N, S, W, E, Help.");
     parser.showCommands();
   }
 
@@ -194,7 +194,7 @@ public class Game {
     // Try to leave current room.
     Room nextRoom = currentRoom.nextRoom(direction);
     if (nextRoom == null)
-      System.out.println("There is no door!");
+      System.out.println("There is exit/entrance to the place you are trying to go.");
     else {
       currentRoom = nextRoom;
       System.out.println(currentRoom.longDescription());
