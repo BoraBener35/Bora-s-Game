@@ -167,6 +167,17 @@ public class Game {
     }
   }
 
+  private void dropItem(String secondWord){
+    Inventory temp = currentRoom.getInventory();
+
+    Item item = temp.removeItem(secondWord);
+    if (item != null){
+      if (inventory.addItem(item)){
+        System.out.println("You have taken the attribute/accolade");
+      }else
+      System.out.println("You were unable to take the attributes/accolade");
+  }
+
   // implementations of user commands:
   /**
    * Print out some help information. Here we print some stupid, cryptic message
