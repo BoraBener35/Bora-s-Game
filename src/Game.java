@@ -292,9 +292,10 @@ class Game {
 	 * and a list of the command words.
 	 */
 	private void printHelp() {
-		System.out.println("You are lost. You are alone. You wander");
-		System.out.println("around at Monash Uni, Peninsula Campus.");
+		System.out.println("You are in the nba. Try to make it to the Hall Of Fame");
+		System.out.println("You are in:" + currentRoom);
 		System.out.println();
+		System.out.println("You need all the boosts and accolades required to win");
 		System.out.println("Your command words are:");
 		parser.showCommands();
 	}
@@ -340,16 +341,16 @@ class Game {
     if (roomName.equals("Gatorade") && inventory.contains("ShootingBoosts")!=null && inventory.contains("StaminaBar")!=null){
 		return true;
 	}else{
-		System.out.println("");
+		System.out.println("You need more things to go to the gatorade facility");
 		return false;
 	}
 }
 
-private String information(){
+private String information() {
 	if (inventory.contains("MVP Trophy")!=null && inventory.contains("NBAChamp")!=null){
 		return "You only need one skill boost now";
 	}
-	
+	return "This is what you have" + inventory;
 }
 
 public boolean hasWon(){
