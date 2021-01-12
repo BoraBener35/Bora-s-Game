@@ -354,7 +354,7 @@ private String information() {
 }
 
 public boolean hasWon(){
-	return 10 == inventory.size();
+	return 14 == inventory.size();
 }
 }
 
