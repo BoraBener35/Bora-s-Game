@@ -14,3 +14,43 @@ Item Name: Stamina bar
 Item Description: This gives you more stamina
 Openable: false
 Room: Home
+Item Name: Defensive boosts
+Item Description:This boosts your defense
+Openable: false
+Room: Gatorade
+Item Name: NBAChamp
+Item Description: This is your championship
+Openable: true
+Room: NBAHomeCourt
+Item Name: NbaFinalsMvp
+Item Description: This is because you played good
+Openable: false
+Item: NBAChamp
+Item Name: PlaymakingBoosts
+Item Description: Boosts passing and dribbling
+Openable: false
+Room: GatoradeWorkout1
+Item Name: SpeedBoosts
+Item Description: This improves your speed and acceleration
+Openable: False
+Room:GatoradeWorkout2
+Item Name: VerticalBoosts
+Item Description: This improves your vertical
+Openable: False
+Room:GatoradeWorkout3
+Item Name: HofSpeech
+Item Description: This is the speech you give for being inducted to the hall of fame, you are almost done the game
+Openable: True
+Room: HallOFFameSpeech
+Item Name: Thankyouspeech
+Item Description: Thank you to my parents, my coaching staff, the manegement, my trainer. Thank you for inducting me into the hall of fame.
+Openable:False
+Item: HofSpeech
+Item Name: AquickSpeech
+Item Description: Thank you, have a nice day
+Openable: False
+Item: HofSpeech
+Item Name: A
+Item Description:
+Openable:
+Item: 
