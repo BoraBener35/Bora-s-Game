@@ -9,7 +9,7 @@ Room Description:  This is the Agency where you can ask for a trade to another t
 Exit Rooms: W-Court, E-Home, S-NBA
 Room Name: Gym
 Room Description: This is the gym where you can build muscles, improve speed, and vertical. 
-Exit Rooms: E-Home, W-Court, D-NBAHomeCourt, S-Gatorade Facility
+Exit Rooms: E-Home, W-Court, D-NBAHomeCourt, Gatorade Facility-GatoradeFacility
 Room Name: NBAHomeCourt
 Room Description: This is your home court where you will have games 
 Exit Rooms: E-Home, W-Court, N-Agency
@@ -52,7 +52,7 @@ Exit Rooms: U-Gatorade
 Room Name: HallOFFameSpeech
 Room Description: You are now done giving your speech
 Exit Rooms: U-HallOFFame
-Room Description: You are now in the Hall Of Fame. You have completed your NBA career
-Exit Rooms:D-HallOFFameSpeech
-
+Room Name: HallOFFAME
+Room Description: You are now in the Hall Of Fame. You have completed your NBA career. You Win!!
+Exit Rooms: 
 

@@ -149,6 +149,8 @@ class Game {
 		while (!finished) {
 			Command command = parser.getCommand();
 			finished = processCommand(command);
+			if (!finished)
+				finished = hasWon();
 		}
 		System.out.println("Thank you for playing.  Good bye.");
 	}
@@ -209,10 +211,14 @@ class Game {
 				System.out.println("Open what?");
 			else
 				openItem(command.getSecondWord());
+		}  else if (commandWord.equals("")) {
+			if (!command.hasSecondWord())
+				System.out.println("Open what?");
+			else
+				openItem(command.getSecondWord());
 		}
 		return false;
 	}
-
 	private void openItem(String itemName) {
 		Item item = inventory.contains(itemName);
 		
@@ -330,4 +336,24 @@ class Game {
 			System.out.println(currentRoom.longDescription());
 		}
   }
+  private boolean restrictions(String roomName) {
+    if (roomName.equals("Gatorade") && inventory.contains("ShootingBoosts")!=null && inventory.contains("StaminaBar")!=null){
+		return true;
+	}else{
+		System.out.println("");
+		return false;
+	}
 }
+
+private String information(){
+	if (inventory.contains("MVP Trophy")!=null && inventory.contains("NBAChamp")!=null){
+		return "You only need one skill boost now";
+	}
+	
+}
+
+public boolean hasWon(){
+	return 10 == inventory.size();
+}
+}
+

@@ -36,6 +36,10 @@ public Item contains(String itemName) {
     }
     return null;
 }
+
+public int size() {
+	return items.size();
+}
 }
 
 

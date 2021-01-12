@@ -143,4 +143,13 @@ public class Room {
   public void setDescription(String description) {
     this.description = description;
   }
+
+  public String restrictions(String inventory){
+    for(int i = 0; i< inventory.length(); i++){
+      if(inventory != "ShootingBoost"){
+        return ("You can not go to the gatorade facility without shooting boosts");
+    }
+  }
+  return inventory;
+}
 }

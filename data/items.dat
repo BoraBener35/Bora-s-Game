@@ -50,7 +50,19 @@ Item Name: AquickSpeech
 Item Description: Thank you, have a nice day
 Openable: False
 Item: HofSpeech
-Item Name: A
-Item Description:
-Openable:
-Item: 
+Item Name: HurtfulSpeech
+Item Description: Everyone is trash in the NBA and I am too good for even these hall of famers. I'm out!!
+Openable: False
+Item: HofSpeech
+Item Name: Workout
+Item Description: You have just completed a workout
+Openable: False
+Room: GatoradeWorkout4
+Item Name: Workout
+Item Description: You have just completed a workout
+Openable: False
+Room: GatoradeWorkout5
+Item Name: Workout
+Item Description: You have just completed a workout
+Openable: false
+Room: GatoradeWorkout6
