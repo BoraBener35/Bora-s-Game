@@ -211,14 +211,27 @@ class Game {
 				System.out.println("Open what?");
 			else
 				openItem(command.getSecondWord());
-		}  else if (commandWord.equals("")) {
+		}  else if (commandWord.equals("shoot")) {
 			if (!command.hasSecondWord())
-				System.out.println("Open what?");
+				System.out.println("Shoot What?");
 			else
-				openItem(command.getSecondWord());
+				shoot(command.getSecondWord());
 		}
 		return false;
 	}
+
+	private boolean shoot(String command){
+        if (currentRoom.getRoomName().equals("Court")){
+            if (command.equals("basketball")){
+                return true;
+            }
+        }else{
+            System.out.println("You can't shoot/practice in this room");
+            return false;
+		}
+		return false;
+    }
+
 	private void openItem(String itemName) {
 		Item item = inventory.contains(itemName);
 		
@@ -345,6 +358,14 @@ class Game {
 		return false;
 	}
 }
+	private boolean restrictions2(String roomName){
+	if (roomName.equals("HallOFFameSpeech") && inventory.size() == 13){
+		return true;
+	}else{
+		System.out.println("You haven't collected all the things needed to enter this part in your career");
+		return false;
+	}
+}
 
 private String information() {
 	if (inventory.contains("MVP Trophy")!=null && inventory.contains("NBAChamp")!=null){
@@ -355,6 +376,7 @@ private String information() {
 
 public boolean hasWon(){
 	return 14 == inventory.size();
+	
 }
 }
 

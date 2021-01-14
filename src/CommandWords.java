@@ -10,7 +10,7 @@
  */
 class CommandWords {
   // a constant array that holds all valid command words
-  private static final String validCommands[] = {"quit","go", "help", "U", "N", "S", "D", "W", "E", "Take", "i"};
+  private static final String validCommands[] = {"quit","go", "help", "U", "N", "S", "D", "W", "E", "Take", "i", "Shoot", "basketball"};
 
   /**
    * Constructor - initialise the command words.
@@ -31,6 +31,7 @@ class CommandWords {
     // if we get here, the string was not found in the commands
     return false;
   }
+
 
   /*
    * Print all valid commands to System.out.
